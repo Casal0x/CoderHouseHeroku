@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
-    "start": "node ./dist/index.js",
+    "start": "npm run build && node ./dist/index.js",
     "dev": "nodemon --exec babel-node ./src/index.js 8080 1086552445452265 0a67def8f0df4a9e586a2e310d730542",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
